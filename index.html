@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="vendor/css/style.css">
+</head>
+
+<body>
+
+
+    <main class="position-relative top-0 w-100">
+
+        <canvas id="nokey" width="800" height="800" class="position-absolute w-100 h-100">
+        </canvas>
+
+        <section class="background d-flex align-items-center pt-3 pb-5">
+            <div class="container px-3 px-md-5">
+                <div class="clock">
+                    <div class="display">
+              </div>
+              </div>
+                <div class="row mt-4 align-items-center">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <div class="d-flex flex-column flex-md-row gap-4 align-items-center">
+                            <div class="service d-flex flex-xl-column h-100 justify-content-center gap-4">
+                                <div class="service-box" data-bs-toggle="modal" data-bs-target="#aboutme">
+                                    <img class="icon-service" src="vendor/img/about me.webp" alt="">
+                                    <p class="mb-0">About me</p>
+                                </div>
+                                <div class="service-box" data-bs-toggle="modal" data-bs-target="#resume">
+                                    <img class="icon-service" src="vendor/img/resume.png" alt="">
+                                    <p class="mb-0">Resume</p>
+                                </div>
+                                <div class="service-box" data-bs-toggle="modal" data-bs-target="#skill">
+                                    <img class="icon-service" src="vendor/img/skill.png" alt="">
+                                    <p class="mb-0">Skill</p>
+                                </div>
+                                <div class="service-box" data-bs-toggle="modal" data-bs-target="#project">
+                                    <img class="icon-service" src="vendor/img/project.png" alt="">
+                                    <p class="mb-0">Project</p>
+                                </div>
+                                <div class="service-box" data-bs-toggle="modal" data-bs-target="#contact">
+                                    <img class="icon-service" src="vendor/img/contact.png" alt="">
+                                    <p class="mb-0">Contact</p>
+                                </div>
+                            </div>
+                            <div class="ms-0 ms-md-4 text-white text-center text-md-start">
+                                <h3 class="text-warning">I am</h3>
+                                <h2 class="font-name mt-4">Phan</h2>
+                                <h2 class="font-name mt-2">Lyhor</h2>
+                                <p class="mt-5">I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column-reverse flex-md-row gap-4 justify-content-end align-items-center">
+                            <div class="socail">
+                               <div class="d-flex flex-row flex-md-column gap-4 position-relative">
+                                <a class="link-socail" href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a class="link-socail" href="#"><i class="fa-brands fa-github"></i></a>
+                                <a class="link-socail" href="#"><i class="fa-brands fa-telegram"></i></a>
+                                <a class="link-socail" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <div class="line-socail d-none d-md-block"></div>
+                               </div>
+                            </div>
+                            <div class="my-img">
+                                <img src="vendor/img/img.jpg" alt="Profile Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+      
+        <!-- Modal about me -->
+        <div class="modal fade" id="aboutme" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header container">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">About me</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-6 px-0">
+                                <div data-aos="fade-up" class="img-me d-flex justify-content-center">
+                                    <img src="vendor/img/MY-IMG.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                                <div data-aos="fade-up" class="ps-2 ps-lg-5">
+                                    <h1 data-aos="flip-up" class="text-white">I'm Web developer</h1>
+                                    <p data-aos="flip-up" class="text-white fs-5">I love to work as a developer. I alway try my best for my client
+                                    </p>
+                                    <div class="d-flex flex-column row-gap-3">
+                                        <div data-aos="flip-up" class="d-flex text-white mt-5">
+                                            <p class="text-about-me">Name</p><span>: &nbsp;&nbsp;&nbsp; Phan lyhor</span>
+                                        </div>
+                                        <div data-aos="flip-up" class="d-flex text-white">
+                                            <p class="text-about-me">Date of birth</p><span>: &nbsp;&nbsp;&nbsp; 19/02/2005</span>
+                                        </div>
+                                        <div data-aos="flip-up" class="d-flex text-white">
+                                            <p class="text-about-me">Nationality</p><span>: &nbsp;&nbsp;&nbsp; khmer</span>
+                                        </div>
+                                        <div data-aos="flip-up" class="d-flex text-white">
+                                            <p class="text-about-me">Weight</p><span>: &nbsp;&nbsp;&nbsp; 90 kg</span>
+                                        </div>
+                                        <div data-aos="flip-up" class="d-flex text-white">
+                                            <p class="text-about-me">Height</p><span>: &nbsp;&nbsp;&nbsp; 167 cm</span>
+                                        </div>
+                                        <div data-aos="flip-up" class="d-flex text-white">
+                                            <p class="text-about-me">Personality</p><span>: &nbsp;&nbsp;&nbsp; introvert
+                                                &nbsp;&nbsp; creative</span>
+                                        </div>
+                                    </div>
+                                    <div data-aos="flip-up" class="mt-4">
+                                        <button type="button" class="btn btn-outline-primary text-white px-4 py-3">Donwload my CV
+                                            &nbsp;&nbsp;<i class="fa-solid fa-download fa-bounce"
+                                                style="color: #FFD43B;"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    
+        <!-- Modal resume -->
+        <div class="modal fade" id="resume" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header container">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Resume</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="container">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- Sidebar -->
+                            <div class="col-12 col-md-3 sidebar">
+                                <div class="d-flex w-100 justify-content-center">
+                                    <img src="vendor/img/MY-IMG.png" alt="Profile" class="profile-img">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h2 class="section-title">Contact</h2>
+                                    <div class="mb-3">
+                                        <div class="fw-bold">Phone</div>
+                                        <div>123-456-7890</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="fw-bold">Email</div>
+                                        <div>hello@reallygreatstie.com</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="fw-bold">Address</div>
+                                        <div>123 Anywhere St., Any City</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h2 class="section-title">Education</h2>
+                                    <div class="mb-3">
+                                        <div>2008</div>
+                                        <div class="fw-bold">Enter Your Degree</div>
+                                        <div>University/College</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div>2008</div>
+                                        <div class="fw-bold">Enter Your Degree</div>
+                                        <div>University/College</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h2 class="section-title">Expertise</h2>
+                                    <ul class="expertise-list">
+                                        <li>UI/UX</li>
+                                        <li>Visual Design</li>
+                                        <li>Wireframes</li>
+                                        <li>Storyboards</li>
+                                        <li>User Flows</li>
+                                        <li>Process Flows</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h2 class="section-title">Language</h2>
+                                    <div>English</div>
+                                    <div>Spanish</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Main Content -->
+                            <div class="col-12 col-md-9 main-content">
+                                <div class="mb-5">
+                                    <h1 class="name">Mariana Anderson</h1>
+                                    <div class="position">Marketing Manager</div>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu elementum.
+                                    </p>
+                                </div>
+                                
+                                <div class="mb-5">
+                                    <h2 class="section-title">Experience</h2>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="fw-bold">2019 - 2022</div>
+                                        <div>Company Name | 123 Anywhere St., Any City</div>
+                                        <div class="fw-bold mb-2">Job position here</div>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at laoreet.</p>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="fw-bold">2017 - 2019</div>
+                                        <div>Company Name | 123 Anywhere St., Any City</div>
+                                        <div class="fw-bold mb-2">Job position here</div>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at laoreet.</p>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="fw-bold">2015 - 2017</div>
+                                        <div>Company Name | 123 Anywhere St., Any City</div>
+                                        <div class="fw-bold mb-2">Job position here</div>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at laoreet.</p>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <h2 class="section-title">Reference</h2>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="fw-bold">Name Surname</div>
+                                            <div>Job position, Company Name</div>
+                                            <div class="text-muted">Phone: 123-456-7890</div>
+                                            <div class="text-muted">Email: hello@reallygreatstie.com</div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="fw-bold">Name Surname</div>
+                                            <div>Job position, Company Name</div>
+                                            <div class="text-muted">Phone: 123-456-7890</div>
+                                            <div class="text-muted">Email: hello@reallygreatstie.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal skill -->
+        <div class="modal fade" id="skill" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header container">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">My skill</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="container">
+                    <div id="skillsContainer" class="mt-5"></div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal project -->
+        <div class="modal fade" id="project" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header container">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">My some project while learning</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="container mt-5">
+                    <div class="row gy-4">
+                        <div class="col-12 col-lg-6 ">
+                            <div class="card overflow-hidden bg-transparent box-shadow">
+                                <div class="img-project">
+                                    <img src="vendor/img/project/project-1.png" alt="">
+                                </div>
+                                <h4 class="text-white mt-3 ms-3">Angkor cycle (Solo project)</h2>
+                                <div class="row">
+                                    <div class="col-sm-8 order-2 order-sm-1">
+                                        <div class="p-3 pt-0">
+                                            <p class="text-white-2 mt-3">I create this project while. I am learning shot coures at ANT training <br>('HTML + CSS')</p>
+                                            <button class="btn mt-3 hvr-shutter-in-horizontal overflow-hidden">Visit Site <i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 order-1 order-sm-2">
+                                        <div class="p-sm-3 p-0">
+                                            <ul class="text-white-2">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card overflow-hidden bg-transparent box-shadow">
+                                <div class="img-project">
+                                    <img src="vendor/img/project/project-2.png" alt="">
+                                </div>
+                                <h4 class="text-white mt-3 ms-3">KH-ACADEMY (Team project)</h2>
+                                <div class="row">
+                                    <div class="col-sm-8 order-2 order-sm-1">
+                                        <div class="p-3 pt-0">
+                                            <p class="text-white-2 mt-3">Me and my team create this project while. we are learning scholarship at ANT training <br>('HTML + CSS')</p>
+                                            <button class="btn mt-3 hvr-shutter-in-horizontal overflow-hidden">Visit Site <i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 order-1 order-sm-2">
+                                        <div class="p-sm-3 p-0">
+                                            <ul class="text-white-2">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card overflow-hidden bg-transparent box-shadow">
+                                <div class="img-project">
+                                    <img src="vendor/img/project/project-3.png" alt="">
+                                </div>
+                                <h4 class="text-white mt-3 ms-3">Electricity & Water Bill management (Solo project)</h2>
+                                <div class="row">
+                                    <div class="col-sm-8 order-2 order-sm-1">
+                                        <div class="p-3 pt-0">
+                                            <p class="text-white-2 mt-3">I create this project while. I am learning shot coures at ANT training <br>('C++')</p>
+                                            <button class="btn mt-3 hvr-shutter-in-horizontal overflow-hidden">Visit Site <i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 order-1 order-sm-2">
+                                        <div class="p-sm-3 p-0">
+                                            <ul class="text-white-2">
+                                                <li>C++</li>
+                                                <li>C++/OOP</li>
+                                                <li>...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card overflow-hidden bg-transparent box-shadow">
+                                <div class="img-project">
+                                    <img src="vendor/img/project/project-4.png" alt="">
+                                </div>
+                                <h4 class="text-white mt-3 ms-3">Sdab Music (Team project)</h2>
+                                <div class="row">
+                                    <div class="col-sm-8 order-2 order-sm-1">
+                                        <div class="p-3 pt-0">
+                                            <p class="text-white-2 mt-3">Me and my team create this project while. we are learning scholarship at ANT training <br>('HTML + CSS')</p>
+                                            <button class="btn mt-3 hvr-shutter-in-horizontal overflow-hidden">Visit Site <i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 order-1 order-sm-2">
+                                        <div class="p-sm-3 p-0">
+                                            <ul class="text-white-2">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card overflow-hidden bg-transparent box-shadow">
+                                <div class="img-project">
+                                    <img src="vendor/img/project/project-5.png" alt="">
+                                </div>
+                                <h4 class="text-white mt-3 ms-3">IT-Grow (Team project)</h2>
+                                <div class="row">
+                                    <div class="col-sm-8 order-2 order-sm-1">
+                                        <div class="p-3 pt-0">
+                                            <p class="text-white-2 mt-3">Me and my team create this project while. we are learning scholarship at ANT training <br>('HTML + CSS + BOOTSTRAP')</p>
+                                            <button class="btn mt-3 hvr-shutter-in-horizontal overflow-hidden">Visit Site <i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 order-1 order-sm-2">
+                                        <div class="p-sm-3 p-0">
+                                            <ul class="text-white-2">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card overflow-hidden bg-transparent box-shadow">
+                                <div class="img-project">
+                                    <img src="vendor/img/project/project-6.png" alt="">
+                                </div>
+                                <h4 class="text-white mt-3 ms-3">Boakuk (Team project)</h2>
+                                <div class="row">
+                                    <div class="col-sm-8 order-2 order-sm-1">
+                                        <div class="p-3 pt-0">
+                                            <p class="text-white-2 mt-3">Me and my team create this project while. we are learning scholarship at ANT training <br>('HTML + CSS + JavaScript')</p>
+                                            <button class="btn mt-3 hvr-shutter-in-horizontal overflow-hidden">Visit Site <i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 order-1 order-sm-2">
+                                        <div class="p-sm-3 p-0">
+                                            <ul class="text-white-2">
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JavaScript + API</li>
+                                                <li>...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal project -->
+        <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header container">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Contact me</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="location">
+                            <p data-aos="zoom-in-down" class="text-white fs-2">Contact information</p>
+                            <p data-aos="zoom-in-down" class="text-white fs-6">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quasi ut
+                                facere, odit consequatur omnis error consequuntur porro repellat vero esse rerum, quo
+                                neque voluptates</p>
+                            <div data-aos="zoom-in-down" class="contact-info">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div class="contact-detail">
+                                    <h4>Email</h4>
+                                    <p>Phanlyhor369@gmail.com</p>
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" class="contact-info">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <div class="contact-detail">
+                                    <h4>Phone</h4>
+                                    <p>096 7957 891</p>
+                                    <p class="mb-0">092 7199 16</p>
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" class="contact-info">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div class="contact-detail">
+                                    <h4>Address</h4>
+                                    <p>Sangkat Tuek Thla</p>
+                                    <p class="mb-0">Khan sen sok</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div data-aos="zoom-in-down" class="form-contact">
+                            <h3 class="text-white">Just say Hello</h3>
+                            <form action="#" method="post">
+                                <input data-aos="zoom-out" type="text" name="name" placeholder="Your Name" required>
+                                <input data-aos="zoom-out" type="email" name="email" placeholder="Your Email" required>
+                                <input data-aos="zoom-out" type="phone" name="phone" placeholder="Your phone number"
+                                    required>
+                                <input data-aos="zoom-out" type="text" name="subject" placeholder="Your Subject"
+                                    required>
+                                <textarea data-aos="zoom-out" name="message" placeholder="Your Message"
+                                    required></textarea>
+                                <button data-aos="zoom-out" type="submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/js/index.js"></script>
+</body>
+
+</html>
