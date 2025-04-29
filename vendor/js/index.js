@@ -309,10 +309,11 @@ const skills = [
   { name: 'Bootstrap', percentage: 80, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
   { name: 'JavaScript', percentage: 75, icon: './vendor/img/skill/js.png' },
   { name: 'C++', percentage: 75, icon: './vendor/img/skill/c++.png' },
-  { name: 'Photoshop', percentage: 45, icon: './vendor/img/skill/ps.png' },
+  { name: 'Photoshop', percentage: 35, icon: './vendor/img/skill/ps.png' },
   { name: 'Figma', percentage: 60, icon: './vendor/img/skill/figma.png' },
-  { name: 'React', percentage: 45, icon: './vendor/img/skill/react.png' },
-  { name: 'Node.js', percentage: 80, icon: './vendor/img/skill/node.png' }
+  { name: 'React', percentage: 35, icon: './vendor/img/skill/react.png' },
+  { name: 'Node.js', percentage: 80, icon: './vendor/img/skill/node.png' },
+  { name: 'Git', percentage: 60, icon: './vendor/img/skill/Git-Icon-1788C.png' }
 ];
 
 function createSkillElement(skill) {
